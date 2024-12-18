@@ -1,11 +1,18 @@
+
+
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/login">login</router-link> |
+    <router-link to="/test">test</router-link>
+    
   </nav>
   <router-view/>
 </template>
 
+<script setup lang="ts">
+import HelloWorld from './components/HelloWorld.vue';
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
