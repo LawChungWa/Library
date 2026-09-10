@@ -6,6 +6,7 @@ const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/Library/', // <-- 加上呢行，確保 GitHub Pages 順利讀取資產路徑
   plugins: [
     vue(),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
@@ -21,17 +22,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
-  resolve: {
-    extensions: [
-      '.js',
-      '.json',
-      '.jsx',
-      '.mjs',
-      '.ts',
-      '.tsx',
-      '.vue',
-    ]
-  },
-  */
 })
